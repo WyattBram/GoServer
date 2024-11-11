@@ -8,10 +8,8 @@ import (
 )
 
 func main() {
-	// dials server
 	conn, err := net.Dial("tcp", "localhost:7777")
 
-	//handles errors
 	if err != nil {
 		fmt.Println(err)
 		return
